@@ -2,12 +2,15 @@ os: osx
 language: objective-c
 osx_image: xcode9.2
 env:
-  - PLAT=macOS  DST="arch=x86_64"
   - PLAT=iOS    DST="OS=11.2,name=iPhone SE"
   - PLAT=tvOS   DST="OS=11.2,name=Apple TV"
+  - PLAT=macOS  DST="arch=x86_64"
+cache:
+  directories:
+  - Carthage
+before_install:
+  - carthage bootstrap --cache-builds --no-use-binaries --platform $PLAT --verbose
 install:
-  - carthage bootstrap --cache-builds --no-use-binaries --platform $PLAT
+  - xcodebuild -scheme PMKQuartzCore -quiet -destination "$DST" build-for-testing
 script:
-  - set -o pipefail
-  - xcodebuild -scheme PMKQuartzCore -quiet -destination "$DST" build
   - xcodebuild -scheme PMKQuartzCore -quiet -destination "$DST" test
