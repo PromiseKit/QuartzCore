@@ -11,6 +11,7 @@
 		639E8D041D5D651300D210E4 /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 639E8D021D5D651300D210E4 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639E8D051D5D651300D210E4 /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 639E8D031D5D651300D210E4 /* CALayer+AnyPromise.m */; };
 		63D9E6791D6013E7006B2661 /* PMKQCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D9E6781D6013E7006B2661 /* PMKQCTests.swift */; };
+		63E15130219F387C003CE725 /* CALayer+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E1512F219F387C003CE725 /* CALayer+Promise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		63D9E6761D6013E7006B2661 /* PMKQCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKQCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D9E6781D6013E7006B2661 /* PMKQCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMKQCTests.swift; sourceTree = "<group>"; };
 		63D9E67A1D6013E7006B2661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E1512F219F387C003CE725 /* CALayer+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Promise.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				637B4A731D5D5FC600E1BC6C /* PMKQuartzCore.h */,
 				639E8D021D5D651300D210E4 /* CALayer+AnyPromise.h */,
 				639E8D031D5D651300D210E4 /* CALayer+AnyPromise.m */,
+				63E1512F219F387C003CE725 /* CALayer+Promise.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -156,7 +159,7 @@
 				TargetAttributes = {
 					63C7FFA61D5BEE09003BAE60 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					63D9E6751D6013E7006B2661 = {
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639E8D051D5D651300D210E4 /* CALayer+AnyPromise.m in Sources */,
+				63E15130219F387C003CE725 /* CALayer+Promise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
