@@ -1,4 +1,4 @@
-#if !CocoaPods
+#if !PMKCocoaPods
 import PromiseKit
 #endif
 import QuartzCore
