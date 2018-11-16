@@ -1,6 +1,9 @@
+#if !PMKCocoaPods
+import PromiseKit
+#endif
 import QuartzCore
 
-extension CALayer {
+public extension CALayer {
     /**
      Adds an animation to a layer, returning a Guarantee which resolves when the animation stops.
 
